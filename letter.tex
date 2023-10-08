@@ -1,0 +1,29 @@
+\documentclass[12pt]{extarticle}
+\usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
+\usepackage[ngerman]{babel} % use for German date
+%
+\input{preamble/general}
+%
+\documenttype{Letter}
+%
+%! region HEADER INFO
+\author{Michael Reichmann}
+\street@sender{Street, Nr.}
+\city@sender{PLZ, City}
+%
+\recipient{Name Surname}
+\street@recipient{Street, Nr.}
+\city@recipient{PLZ, City}
+%
+\date{City, \today}
+%! endregion
+%
+\begin{document}
+  \begin{Form}
+%
+    \maketitle
+%
+    \signature[Mieters]\ss[2]
+%
+  \end{Form}
+\end{document}

@@ -1,0 +1,21 @@
+%
+\DeclareDocumentCommand{\ss}{O{1}}{\\[#1em]}
+%
+\NewDocumentCommand{\signature}{O{Vollmachtgebers}}{
+  \begin{minipage}{.48\textwidth}
+    \textbox\ss[-.5]
+    \vspace*{-7pt}\hrule height .55pt\leavevmode\ss[-.5]
+    \scriptsize \textit{(Ort, Datum)}\small
+  \end{minipage}\hspace*{.03\textwidth}
+  \begin{minipage}{.48\textwidth}
+    \vspace*{13pt}
+    \hrule height .55pt\leavevmode\ss[-.5]
+    \scriptsize\textit{(Unterschrift des #1)}\small
+  \end{minipage}
+}
+%
+\newcounter{box}
+\newcommand{\checkbox}{\refstepcounter{box}\mbox{\CheckBox[width=7pt, height=7pt, charsize=5pt, bordercolor=0 0 0]{\fontsize{1}{1}\selectfont\textcolor{white}{\thebox}}}}
+\NewDocumentCommand{\textbox}{O{} O{.99}}{\refstepcounter{box}\mbox{\TextField[width=#2\textwidth, height=12pt, borderstyle=U, bordercolor=black, value=#1, borderwidth=0pt]{\fontsize{1}{1}\selectfont\textcolor{white}{\thebox}}}}
+\newcommand{\thickhrulefill}{\leavevmode \leaders \hrule height 1pt\hfill \kern \z@}
+

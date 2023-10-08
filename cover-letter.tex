@@ -1,0 +1,100 @@
+\documentclass[12pt]{extarticle}
+\usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
+%
+\input{preamble/general}
+\setmainfont{Lato}
+\author{Michael Reichmann}
+%
+%! region PERSONAL INFO CH
+%\phone{+49 178 1988015}
+%\email{micha.reichmann@gmail.com}
+%\street{Forchstrasse 151}
+%\address{8032 Z\"urich}
+%\date{Z\"urich, \today}
+%! endregion
+%
+%! region PERSONAL INFO PL
+\phone{797575242}
+\email{micha.reichmann@gmail.com}
+\street{Lipowa 22/9}
+\address{53-124 Wrocław}
+\date{Wrocław, \today}
+%! endregion
+%
+%! region COMPANY INFO
+\company{Nokia}
+\compstreet{Lotnicza 12}
+\compaddress{54-155 Wrocław}
+\oldcomp{ETH Zürich}
+\position{Test Automation Engineer}
+\positionshort{Test Automation Engineer}
+%! endregion
+% --------------------------------------------------------------------------
+\begin{document}
+%
+%! region TITLE
+\maketitle % address lines
+\tikz[remember picture,overlay,blend mode = multiply] \node[inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{figures/bkg1}};
+%! endregion
+%
+%! region OPENING
+%
+%! Expressing your interest in the position.
+%! how I heard about the job (online job posting, company website, referral, etc.).
+%
+Dear Hiring Manager,\par
+%
+I'm extremely excited to be applying to the \@position position at \@company.
+\@company was highly recommended to me and I found this job offering directly on the company's website.
+I'm thrilled to have the opportunity to offer my talents to \@company, a world leader in the telecommunication business.\par
+%! endregion
+%
+%! region FIRST BODY (Optional)
+%
+%! Why am I a good fit for the position?
+%! highlight a few key qualifications or experiences that make you a strong candidate.
+%! Connect your skills and experiences to the specific requirements of the job.
+%
+
+With my object orientated programming and scripting skills in python in addition to my physics background, I am going to excel at your company.
+As a highly analytical individual, I aim to always make rational and objective observations about the world around me.
+Therefore, I am very talented in identifying and solving problems with out-of-the-box thinking.\par
+%! endregion
+%
+%! region SECOND BODY PARAGRAPH (optional)
+%
+%! Provide more details on your relevant experiences and achievements.
+%! Give specific examples of how your skills have contributed to your previous employers or projects.
+%
+While working in my previous role at \@oldcomp, I developed a setup to evaluate future detectors for the Large Hadron Collider.
+In this position I was responsible for several measurement campaigns leading and organising a small team to successful research.
+I strongly value the beauty and power of Linux, which I'm using for both my work and my private life.\par
+%! endregion
+%
+%! region THIRD BODY PARAGRAPH (optional)
+%
+%! Discuss any additional qualifications or experiences that make you stand out.
+%! Show your enthusiasm for the company and its mission.
+%
+While at \@oldcomp, I was able to acquire many new skills and developed myself on a great scale.
+Writing software for instrumentation, data-acquisition and data analysis, I learned many things about programming, networks, versioning control systems and a lot of other things.
+In general, I'm very eager and motivated to learn new things.\par
+%! endregion
+%
+%! region CLOSING
+%
+%! Express your eagerness for an interview and provide your contact information.
+%! Thank the employer for considering your application.
+%
+I'm grateful for this opportunity, and thank you for considering my application.
+I'm looking forward to learning more details about the \@positionshort position and \@company as a whole.
+I'm a committed individual looking to join a goal-oriented team, and I feel that \@company offers me an environment where I can apply my skills on worthy projects.\par
+%! endregion
+%
+Sincerely,\par
+
+%
+\@author
+%
+\end{document}
+% --------------------------------------------------------------------------

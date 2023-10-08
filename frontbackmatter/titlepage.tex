@@ -1,0 +1,22 @@
+%
+\makeatletter
+%
+\renewcommand*{\maketitle}{
+%
+  \normalsize\raggedleft
+  \@author        \strut\\
+  \@street@sender \strut\\
+  \@city@sender   \strut\\
+  %
+  \raggedright
+  \@recipient         \strut\\
+  \@street@recipient  \strut\\
+  \@city@recipient    \strut\\
+  %
+  \raggedleft
+  \@date \strut\par\vspace*{.5em}\noindent
+  \hspace{-1ex}
+}
+%
+\pagestyle{fancy}
+\fancyhead[L]{\LARGE{\textsc{\@documenttype}}}
